@@ -109,7 +109,7 @@ export const SKILLS_BY_CATEGORY = [
   },
   {
     category: "Others",
-    skills: ["Data Viz", "Scientific writing"],
+    skills: ["MLOps", "Data Viz", "Scientific writing"],
   },
 ];
 
@@ -121,17 +121,27 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
     location: "Louvain-La-Neuve (Belgium)",
     date: "2023 - Present",
     techStack: [
+      { name: "Kubernetes" },
       { name: "AWS", tooltip: "Managed deployment on SageMaker." },
       { name: "Docker" },
-      { name: "Kubernetes" },
     ],
     responsibilities: [
       {
-        text: "Development of internal Chatbot platform with RAG capabilities (Tech Lead)",
+        text: "Development of internal Chatbot platform with RAG capabilities (Tech Lead). Made multiple webinars and trainings as part of the change management process.",
         skills: ["Git"],
       },
       {
-        text: "Development of a configurable email processing pipeline to facilitate order intakes",
+        text: "Development of a configurable email processing pipeline to facilitate order intakes.",
+        skills: ["Git"],
+        caseStudy: {
+          challenge: "",
+          solution: "",
+          impact: "",
+        },
+      },
+
+      {
+        text: "Development of computer-vision based safety apps with alerting system in case of dangerous situations.",
         skills: ["Git"],
         caseStudy: {
           challenge: "",
@@ -140,13 +150,9 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
         },
       },
       {
-        text: "Made multiple webinars and trainings as part of the change management process",
-        skills: [],
-      } as ResponsibilityWithoutCaseStudy,
-      {
-        text: "Development of safety apps with alerting system in case of dangerous situations",
+        text: "AI Coordinator for the Automotive Digital Transformation Projects, focusing on traceability data and energy consumption.",
         skills: ["Git"],
-      } as ResponsibilityWithoutCaseStudy,
+      },
     ],
   },
   {
@@ -161,15 +167,15 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
     ],
     responsibilities: [
       {
-        text: "Development of safety apps with alerting system in case of dangerous situations",
+        text: "Made multiple descriptive statistics studies and predictive models on large healthcare datasets (up to 400 000 persons). Also made posters presenting these studies in both french and international conferences.",
         skills: [],
       },
       {
-        text: "In charge of the internal python library used to speed-up the studies (preprocess the data, create features, facilitate the creation of predictive models and deploy them in production)",
+        text: "In charge of the internal python library used to speed-up the studies (preprocess the data, create features, facilitate the creation of predictive models and deploy them in production).",
         skills: [],
       } as ResponsibilityWithoutCaseStudy,
       {
-        text: "Made posters presenting these studies in both french and international conferences",
+        text: "Built an API called by the dev team to get various informations on medications and call the predictive models (classified as medical devices).",
         skills: [],
       } as ResponsibilityWithoutCaseStudy,
     ],
@@ -182,6 +188,23 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
         text: "Epidemiology, Comorbidity, Treatment and Outcome of Autoimmune Liver Diseases: A French Nationwide Study",
         url: "https://www.sciencedirect.com/science/article/pii/S2589555925002253",
       },
+    ],
+  },
+  {
+    title: "Data Scientist Intern",
+    company: "Sêmeia",
+    companyUrl: "https://www.semeia.io/",
+    location: "Toulouse (France)",
+    date: "2020",
+    techStack: [
+      { name: "Pytorch", tooltip: "" },
+      { name: "SQL", tooltip: "" },
+    ],
+    responsibilities: [
+      {
+        text: "Research and implementation of an efficient embedding for medical concepts.",
+        skills: [],
+      } as ResponsibilityWithoutCaseStudy,
     ],
   },
 ];

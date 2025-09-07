@@ -238,13 +238,13 @@ export default function Resume() {
                 {PROFESSIONAL_EXPERIENCE.map((job, jobIndex) => (
                   <div
                     key={jobIndex}
-                    className="relative grid grid-cols-1 lg:grid-cols-3 gap-x-12 group"
+                    className="relative grid grid-cols-1 lg:grid-cols-4 gap-x-12 group"
                   >
                     <div className="absolute -left-[41px] top-1 h-4 w-4 rounded-full bg-primary border-4 border-background transition-transform duration-300 ease-in-out group-hover:scale-150"></div>
-                    <div className="lg:col-span-2">
+                    <div className="lg:col-span-3">
                       <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
                         <h3 className="text-xl font-bold">{job.title}</h3>
-                        <p className="font-mono text-sm text-muted-foreground mt-1 md:mt-0">
+                        <p className="font-mono text-sm text-muted-foreground mt-1 mr-1 md:mt-0">
                           <a
                             href={job.companyUrl}
                             target="_blank"
@@ -307,11 +307,31 @@ export default function Resume() {
                           );
                         })}
                       </div>
+                      {job.publications && (
+                        <>
+                          <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 mt-3">
+                            Publications
+                          </h4>
+                          {job.publications.map((publication) => (
+                            <a
+                              href={publication.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-start hover:text-primary hover:underline mb-2"
+                            >
+                              <Book className="h-4 w-4 mr-2 text-muted-foreground flex-shrink-0 mt-0.5" />
+                              <p className="text-sm text-muted-foreground">
+                                {publication.text}
+                              </p>
+                            </a>
+                          ))}
+                        </>
+                      )}
                     </div>
                     <div className="lg:col-span-1 mt-6 lg:mt-0">
                       {job.techStack && (
                         <>
-                          <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 mt-3">
+                          <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 mt-2.5">
                             Tech Stack
                           </h4>
                           <div className="flex flex-wrap gap-2">
@@ -351,26 +371,6 @@ export default function Resume() {
                               );
                             })}
                           </div>
-                        </>
-                      )}
-                      {job.publications && (
-                        <>
-                          <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3 mt-3">
-                            Publications
-                          </h4>
-                          {job.publications.map((publication) => (
-                            <a
-                              href={publication.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-start hover:text-primary hover:underline mb-2"
-                            >
-                              <Book className="h-4 w-4 mr-2 text-muted-foreground flex-shrink-0 mt-0.5" />
-                              <p className="text-sm text-muted-foreground">
-                                {publication.text}
-                              </p>
-                            </a>
-                          ))}
                         </>
                       )}
                     </div>

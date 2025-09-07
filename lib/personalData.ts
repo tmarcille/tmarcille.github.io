@@ -17,6 +17,7 @@ export const SKILL_ICONS: Record<
   React.ComponentType<{ className?: string }>
 > = {
   Python: CodeIcon,
+  React: CodeIcon,
   TensorFlow: CpuIcon,
   PyTorch: CpuIcon,
   Keras: LayersIcon,
@@ -100,11 +101,15 @@ export const SKILLS_BY_CATEGORY = [
   },
   {
     category: "Tools & Technologies",
-    skills: ["Docker", "Kubernetes", "Git"],
+    skills: ["Docker", "Kubernetes", "Git", "PowerBI"],
   },
   {
     category: "Cloud Platforms",
     skills: ["AWS", "GCP", "Azure"],
+  },
+  {
+    category: "Others",
+    skills: ["Data Viz", "Scientific writing"],
   },
 ];
 
@@ -150,7 +155,10 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
     companyUrl: "https://www.semeia.io/",
     location: "Toulouse (France)",
     date: "2020 - 2023",
-    techStack: [{ name: "Pytorch", tooltip: "" }],
+    techStack: [
+      { name: "Pytorch", tooltip: "" },
+      { name: "SQL", tooltip: "" },
+    ],
     responsibilities: [
       {
         text: "Development of safety apps with alerting system in case of dangerous situations",
@@ -181,14 +189,13 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
 export const EDUCATION: EDUCATION[] = [
   {
     cursus:
-      "Research Master, specializing in Machine Learning and Optimization of Complex Systems",
+      "Research Master: Machine Learning and Optimization\n of Complex Systems",
     school: "Université de Technologie de Compiègne",
     date: "2019-2020",
     description: "Machine Learning, Operational research, Decision theory",
   },
   {
-    cursus:
-      "Master in Computer Engineering, specializing in Data Mining and Decision-making",
+    cursus: "Master in Computer Engineering: Data Mining and\nDecision-making",
     school: "Université de Technologie de Compiègne",
     date: "2014-2020",
     description:
@@ -200,7 +207,8 @@ export const INTERESTS = [
   {
     name: "Cooking",
     icon: ChefHatIcon,
-    tooltip: "",
+    tooltip:
+      'Currently going through "The Art of Escapism Cooking" by Mandy Lee',
   },
   {
     name: "Photography",

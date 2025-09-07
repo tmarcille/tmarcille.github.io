@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/tooltip";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { DownloadIcon, LinkedinIcon, ChevronDown } from "lucide-react";
+import { DownloadIcon, LinkedinIcon, ChevronDown, Book } from "lucide-react";
 import {
   CONTACT_INFO,
   SKILLS_BY_CATEGORY,
@@ -363,8 +363,9 @@ export default function Resume() {
                               href={publication.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="hover:text-primary hover:underline"
+                              className="flex items-start hover:text-primary hover:underline mb-2"
                             >
+                              <Book className="h-4 w-4 mr-2 text-muted-foreground flex-shrink-0 mt-0.5" />
                               <p className="text-sm text-muted-foreground">
                                 {publication.text}
                               </p>
@@ -387,7 +388,7 @@ export default function Resume() {
                 {EDUCATION.map((experience) => (
                   <div key={experience.cursus}>
                     <div className="flex flex-col mb-1 md:flex-row md:justify-between md:items-baseline">
-                      <h3 className="text-lg font-semibold">
+                      <h3 className="text-lg font-semibold whitespace-pre-line">
                         {experience.cursus}
                       </h3>
                       <p className="font-mono text-sm text-muted-foreground mt-1 md:mt-0">
@@ -403,7 +404,7 @@ export default function Resume() {
             </section>
           </main>
           <footer className="mt-12 pt-6 border-t text-center text-sm text-muted-foreground font-mono space-y-2">
-            <p>Last updated: August 2025</p>
+            <p>Last updated: September 2025</p>
             <p>
               <a
                 href="https://github.com/tmarcille/dotfiles"

@@ -46,23 +46,22 @@
 
 :root {
     --radius: 0.5rem;
-    /* Brownish retro journal color palette */
-    --background: #f0e6d2; /* Aged paper background */
-    --foreground: #3c3127; /* Dark brown text */
-    --card: #f7f0e0; /* Slightly lighter than background */
+    --background: #f0e6d2;
+    --foreground: #3c3127;
+    --card: #f7f0e0;
     --card-foreground: #3c3127;
     --popover: #f7f0e0;
     --popover-foreground: #3c3127;
-    --primary: #7a5c3c; /* Rich brown */
+    --primary: #7a5c3c;
     --primary-foreground: #ffffff;
-    --secondary: #d4c8b5; /* Light brown */
+    --secondary: #d4c8b5;
     --secondary-foreground: #3c3127;
-    --muted: #e6ddd2; /* Muted brown */
+    --muted: #e6ddd2;
     --muted-foreground: #6b5f52;
-    --accent: #a68c64; /* Warm tan */
+    --accent: #a68c64;
     --accent-foreground: #3c3127;
-    --destructive: #9c4f3f; /* Reddish brown */
-    --border: #cbbfa9; /* Light brown border */
+    --destructive: #9c4f3f;
+    --border: #cbbfa9;
     --input: #cbbfa9;
     --ring: #7a5c3c;
     --chart-1: #7a5c3c;
@@ -81,22 +80,22 @@
 }
 
 .dark {
-    --background: #25201b; /* Dark brown background */
-    --foreground: #f0e6d2; /* Light cream text */
-    --card: #302922; /* Slightly lighter than background */
+    --background: #25201b;
+    --foreground: #f0e6d2;
+    --card: #302922;
     --card-foreground: #f0e6d2;
     --popover: #302922;
     --popover-foreground: #f0e6d2;
-    --primary: #a68c64; /* Warm tan */
+    --primary: #a68c64;
     --primary-foreground: #25201b;
-    --secondary: #7a5c3c; /* Rich brown */
+    --secondary: #7a5c3c;
     --secondary-foreground: #f0e6d2;
-    --muted: #3c3127; /* Dark brown */
+    --muted: #3c3127;
     --muted-foreground: #cbbfa9;
-    --accent: #cbbfa9; /* Light brown */
+    --accent: #cbbfa9;
     --accent-foreground: #25201b;
-    --destructive: #c97865; /* Lighter reddish brown */
-    --border: #7a5c3c; /* Rich brown border */
+    --destructive: #c97865;
+    --border: #7a5c3c;
     --input: #7a5c3c;
     --ring: #a68c64;
     --chart-1: #a68c64;
@@ -118,37 +117,12 @@
     * {
         @apply border-border outline-ring/50;
     }
-    body {
-        @apply bg-background text-foreground font-serif;
-    }
 
-    /* Retro journal typography */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply font-serif;
-    }
-
-    /* Section styling */
     section {
         @apply mb-10;
     }
 
-    /* Vintage border styles */
     h2 {
-        @apply border-b-2 border-border pb-2 mb-6;
-    }
-
-    /* Subtle text shadows for depth */
-    h1 {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Better link styling */
-    a {
-        @apply text-primary hover:text-primary/80 transition-colors;
+        @apply pb-2 mb-6;
     }
 }

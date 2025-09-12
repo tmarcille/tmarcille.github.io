@@ -316,6 +316,7 @@ export default function Resume() {
                             <a
                               href={publication.url}
                               target="_blank"
+                              key={publication.url}
                               rel="noopener noreferrer"
                               className="flex items-start hover:text-primary hover:underline mb-2"
                             >

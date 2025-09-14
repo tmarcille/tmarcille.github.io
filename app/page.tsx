@@ -140,7 +140,11 @@ export default function Resume() {
                 Professional Summary
               </h2>
               <p className="leading-relaxed text-muted-foreground">
-                {/*#TODO complete this*/}
+                Data Scientist with a strong foundation in Computer Science and
+                a specialization in Machine Learning Engineering. Proficient in
+                the end-to-end lifecycle of machine learning projects, from data
+                analysis and model development to deployment and MLOps. Worked
+                both in an industrial setting and on healthcare related studies.
               </p>
             </section>
             <section>

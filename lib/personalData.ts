@@ -101,7 +101,7 @@ export const SKILLS_BY_CATEGORY = [
   },
   {
     category: "Tools & Technologies",
-    skills: ["Docker", "Kubernetes", "Git", "PowerBI"],
+    skills: ["Kubernetes", "Git", "PowerBI"],
   },
   {
     category: "Cloud Platforms",
@@ -121,18 +121,47 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
     location: "Louvain-La-Neuve (Belgium)",
     date: "2023 - Present",
     techStack: [
+      { name: "Python" },
+      {
+        name: "React",
+        tooltip: "Framework of choice for user facing applications.",
+      },
       { name: "Kubernetes" },
-      { name: "AWS", tooltip: "Managed deployment on SageMaker." },
-      { name: "Docker" },
+      { name: "AWS", tooltip: "S3, DynamoDB, SageMaker" },
+      { name: "GCP", tooltip: "VertexAI, Translation API" },
+      { name: "Azure", tooltip: "AI models provider, Document Intelligence" },
+      { name: "SQL", tooltip: "" },
     ],
     responsibilities: [
       {
         text: "Development of internal Chatbot platform with RAG capabilities (Tech Lead). Made multiple webinars and trainings as part of the change management process.",
-        skills: ["Git"],
+        skills: [
+          "Kubernetes",
+          "Git",
+          "Python",
+          "React",
+          "NLP",
+          "GenAI",
+          "AWS",
+          "GCP",
+          "Azure",
+          "MLOps",
+        ],
       },
       {
         text: "Development of a configurable email processing pipeline to facilitate order intakes.",
-        skills: ["Git"],
+        skills: [
+          "Kubernetes",
+          "Git",
+          "Python",
+          "React",
+          "NLP",
+          "GenAI",
+          "AWS",
+          "GCP",
+          "Azure",
+          "MLOps",
+        ],
         caseStudy: {
           challenge: "",
           solution: "",
@@ -142,7 +171,14 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
 
       {
         text: "Development of computer-vision based safety apps with alerting system in case of dangerous situations.",
-        skills: ["Git"],
+        skills: [
+          "Kubernetes",
+          "Git",
+          "Python",
+          "Computer Vision",
+          "Deep Learning",
+          "MLOps",
+        ],
         caseStudy: {
           challenge: "",
           solution: "",
@@ -151,7 +187,7 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
       },
       {
         text: "AI Coordinator for the Automotive Digital Transformation Projects, focusing on traceability data and energy consumption.",
-        skills: ["Git"],
+        skills: ["PowerBI", "Data Viz"],
       },
     ],
   },
@@ -162,21 +198,31 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
     location: "Toulouse (France)",
     date: "2020 - 2023",
     techStack: [
-      { name: "Pytorch", tooltip: "" },
-      { name: "SQL", tooltip: "" },
+      { name: "Python" },
+      {
+        name: "Pytorch",
+        tooltip: "Framework of choice for Deep Learning models",
+      },
+      { name: "SQL" },
     ],
     responsibilities: [
       {
         text: "Made multiple descriptive statistics studies and predictive models on large healthcare datasets (up to 400 000 persons). Also made posters presenting these studies in both french and international conferences.",
-        skills: [],
+        skills: [
+          "Git",
+          "Python",
+          "Deep Learning",
+          "Data Viz",
+          "Scientific writing",
+        ],
       },
       {
         text: "In charge of the internal python library used to speed-up the studies (preprocess the data, create features, facilitate the creation of predictive models and deploy them in production).",
-        skills: [],
+        skills: ["Git", "Python"],
       } as ResponsibilityWithoutCaseStudy,
       {
         text: "Built an API called by the dev team to get various informations on medications and call the predictive models (classified as medical devices).",
-        skills: [],
+        skills: ["Git", "Python", "Deep Learning", "MLOps"],
       } as ResponsibilityWithoutCaseStudy,
     ],
     publications: [
@@ -197,13 +243,17 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
     location: "Toulouse (France)",
     date: "2020",
     techStack: [
-      { name: "Pytorch", tooltip: "" },
-      { name: "SQL", tooltip: "" },
+      { name: "Python" },
+      {
+        name: "Pytorch",
+        tooltip: "Framework of choice for Deep Learning models",
+      },
+      { name: "SQL" },
     ],
     responsibilities: [
       {
         text: "Research and implementation of an efficient embedding for medical concepts.",
-        skills: [],
+        skills: ["Python", "Deep Learning"],
       } as ResponsibilityWithoutCaseStudy,
     ],
   },

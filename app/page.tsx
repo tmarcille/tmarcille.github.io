@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import {
   Tooltip,
@@ -74,12 +73,6 @@ export default function Resume() {
           {/* --- Header --- */}
           <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-6 mb-8 border-b">
             <div className="flex items-center gap-6">
-              <Avatar className="w-24 h-24">
-                <AvatarImage src="/avatar.svg" alt="Théo Marcille" />
-                <AvatarFallback className="text-2xl font-bold bg-muted">
-                  TM
-                </AvatarFallback>
-              </Avatar>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight">
                   Théo Marcille

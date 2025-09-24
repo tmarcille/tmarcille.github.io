@@ -35,7 +35,7 @@ function CaseStudyComponent({ caseStudy }: { caseStudy: CaseStudy }) {
       </div>
       <div>
         <h5 className="font-semibold tracking-wide text-foreground">
-          My Solution
+          Solution
         </h5>
         <p className="text-muted-foreground mt-1">{caseStudy.solution}</p>
       </div>

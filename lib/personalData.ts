@@ -147,6 +147,14 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
           "Azure",
           "MLOps",
         ],
+        caseStudy: {
+          challenge:
+            "To prevent employees from sending company data to platforms like ChatGPT, and to integrate enterprise documents, it was decided to implement our own chatbot.",
+          solution:
+            "A complete provider-agnostic platform, able to use models from VertexAI, Azure and Amazon Bedrock. With features like SSO login, cloud storage, personal document library and RAG collections containing specific enterprise documents. Developped using FastAPI + React.",
+          impact:
+            "The chatbot was widely adopted by the company, and was deployed in multiple regions. We handle 3000+ messages a day.",
+        },
       },
       {
         text: "Development of a configurable email processing pipeline to facilitate order intakes.",
@@ -163,9 +171,12 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
           "MLOps",
         ],
         caseStudy: {
-          challenge: "",
-          solution: "",
-          impact: "",
+          challenge:
+            "Small customers, when ordering glass, are often just sending an email describing their needs. The names used are not the ones from the catalog, and the mail doesn't follow any specific structure. Operators have to process each email to enter manually the informations into the order intake software.",
+          solution:
+            "To solve this, I implemented a pipeline that: 1. Read multiple mailboxes 2. Find orders using a transformer-based classifier 3.Extract structured data from the email using multiple LLM calls. As there are hundreds of possible products and since the customer requests are not always clear, this required careful planning in how we parse the data. The pipeline also had to be able to handle attachments of any type. Multiple web interfaces are also available for the operators to change the prompts, add or remove products, see the processed orders, etc. (made with NextJS).s",
+          impact:
+            "Approximately 80% of the received orders are processed automatically by the pipeline, leading to huge time saving for the employees.",
         },
       },
 
@@ -179,11 +190,6 @@ export const PROFESSIONAL_EXPERIENCE: Job[] = [
           "Deep Learning",
           "MLOps",
         ],
-        caseStudy: {
-          challenge: "",
-          solution: "",
-          impact: "",
-        },
       },
       {
         text: "AI Coordinator for the Automotive Digital Transformation Projects, focusing on traceability data and energy consumption.",
